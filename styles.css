@@ -1,0 +1,56 @@
+:root{
+    --danger-background:rgb(6, 57, 109);
+    --font-color:rgb(220, 220, 234);
+    --primary-background:rgb(123, 2, 16);
+    --font-color-header: rgba(31, 22, 22, 0.116);
+}
+
+
+body{
+    background-color: var(--danger-background);
+    color:var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    border-radius: 1rem;
+    margin:1rem 1rem;
+    padding:2px;
+}
+
+
+.navbar-main{
+    background-color: var(--primary-background);
+    color:var(font-color);
+    font-weight: bold;
+}
+
+
+.navbar-main:hover{
+    background-color: var(--danger-background);
+}
+
+#withdraw-again{
+    background-color:cadetblue;
+    color:var(--font-color);
+}
+
+#remarkable{
+    font-style: italic;
+    color:green;
+    font-weight: bolder;
+}
+
+
+#balance{
+    color:var(--font-color);
+    font-weight:bolder;
+}
+
+.tableGrid{
+    border-radius:1rem;
+    border:1px solid var(--danger-background);
+    padding:10px 10px;
+    position: absolute;
+    display: grid;
+    grid-column: 2/4;
+    grid-row:2/4;
+}
