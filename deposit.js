@@ -44,7 +44,7 @@ function Deposit(){
             body={show?(
                 <>
                     Current Balance:<br/>
-                    <div  id="balance" value={balance}/><br/>
+                    <div  id="balance" value={balance}>{balance}</div><br/>
                     Deposit Amount
                     <input type="number" className="form-control" id="deposit"
                     placeholder="Enter deposit amount" value={deposit} onChange={(e)=>setDeposit(e.currentTarget.value)}/><br/>

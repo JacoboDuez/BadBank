@@ -16,7 +16,11 @@ body{
     padding:2px;
 }
 
-
+#nav-item active:hover{
+    background-color: var(--danger-background);
+    font-weight:bolder;
+    color:azure;
+}
 .navbar-main{
     background-color: var(--primary-background);
     color:var(font-color);
@@ -53,4 +57,13 @@ body{
     display: grid;
     grid-column: 2/4;
     grid-row:2/4;
+}
+
+#table-Outer{
+    border:3px solid var(--font-color);
+    border-radius:2px;
+    padding:5px;
+    align-items: center;
+    display:grid;
+    grid-row:2/5;
 }

@@ -24,6 +24,7 @@ function CreateAccount(){
         if(!checkExistingAccounts(name,email)){
             varContext.users.push({name,email,password,balance:100});
             setShow(false);
+            alert("Your account was succesfully created");
         }
         else{
             clearForm();

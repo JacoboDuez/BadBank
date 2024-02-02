@@ -26,11 +26,9 @@ function Withdraw(){
 
     function checkUserFunds(){
         let userFunds = false;  
-        console.log(withdrawAmount);
          if(balance-withdrawAmount>=0) {
              userFunds = true;
-             document.getElementById('balance').innerHTML = 
-             balance -  withdrawAmount;
+             document.getElementById('balance').innerHTML = balance -  withdrawAmount;
          }
          else
          {  
@@ -41,6 +39,7 @@ function Withdraw(){
             newDiv.appendChild(newContent);
             const currentDiv = document.getElementById("withdraw-again");
             document.body.insertBefore(newDiv,currentDiv);
+            userFunds = true;
          }
              return userFunds;
      }
@@ -70,7 +69,7 @@ function Withdraw(){
             ):(
                 <>
                     <div id="withdraw-again">
-                        <input>
+                        <input type="submit">
                             <button onClick={clearForm}>
                                 Withdraw again
                             </button>

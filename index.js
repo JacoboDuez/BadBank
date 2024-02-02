@@ -10,7 +10,6 @@ function SPA(){
                     <Route path="/deposit/" component={Deposit}/>
                     <Route path="/alldata/" component={AllData}/>
                     <Route path="/withdraw/" component={Withdraw}/>
-                    <Route path="/deposit/" component={Deposit}/>
                 </userContext.Provider>
         </HashRouter>
         
